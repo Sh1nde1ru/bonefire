@@ -6,14 +6,15 @@ ThemeData lightTheme = ThemeData(
     background: Colors.grey.shade400,
     primary: Colors.grey.shade200,
     secondary: Colors.grey.shade100,
+    tertiary: Colors.black,
   ),
 );
 
 ThemeData darkTheme = ThemeData(
   brightness: Brightness.dark,
   colorScheme: ColorScheme.dark(
-    background: Colors.grey.shade900,
-    primary: Colors.grey.shade500,
-    secondary: Colors.grey.shade200,
-  ),
+      background: Colors.grey.shade900,
+      primary: Colors.grey.shade500,
+      secondary: Colors.grey.shade200,
+      tertiary: Colors.white),
 );

@@ -12,15 +12,19 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
+        title: Text(
           "Dashboard",
           style: TextStyle(
+            color: Theme.of(context).colorScheme.tertiary,
             fontWeight: FontWeight.bold,
           ),
         ),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.bluetooth),
+            icon: Icon(
+              Icons.bluetooth,
+              color: Theme.of(context).colorScheme.tertiary,
+            ),
             onPressed: () {
               Navigator.push(
                 context,
@@ -28,9 +32,18 @@ class _HomePageState extends State<HomePage> {
                   builder: (BuildContext context) {
                     return Scaffold(
                       appBar: AppBar(
-                        title: Text('Blutetooh ssid setup'),
+                        foregroundColor: Theme.of(context).colorScheme.tertiary,
+                        title: Text(
+                          'Blutetooth ssid setup',
+                          style: TextStyle(
+                              color: Theme.of(context).colorScheme.tertiary),
+                        ),
                       ),
-                      body: Text('text'),
+                      body: Text(
+                        'text',
+                        style: TextStyle(
+                            color: Theme.of(context).colorScheme.tertiary),
+                      ),
                     );
                   },
                 ),
